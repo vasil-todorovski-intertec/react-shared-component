@@ -1,10 +1,10 @@
 import { babel } from "@rollup/plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
 import external from "rollup-plugin-peer-deps-external";
-// import scss from "rollup-plugin-scss";
+import scss from "rollup-plugin-scss";
 import { terser } from "rollup-plugin-terser";
 
-import postcss from "rollup-plugin-postcss";
+// import postcss from "rollup-plugin-postcss";
 
 export default [
   {
@@ -28,11 +28,14 @@ export default [
       }),
       resolve(),
       external(),
-      postcss({
-        plugins: [],
-        minimise: true,
+      // postcss({
+      //   plugins: [],
+      //   minimise: true,
+      // }),
+      scss({
+        output: "./dist/css/style.css",
+        failOnError: true,
       }),
-      // scss(),
       terser(),
     ],
   },

@@ -1,3 +1,5 @@
 import React from "react";
 
-export const HelloSASS = () => <div>Hello SASS !</div>;
+import "./HelloSASS.scss";
+
+export const HelloSASS = () => <div className="HelloSASS">Hello SASS !</div>;
