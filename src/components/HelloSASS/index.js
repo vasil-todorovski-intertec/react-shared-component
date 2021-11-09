@@ -1,1 +1,1 @@
-export * from "./HelloSASS";
+export * from "./HelloSASS.jsx";

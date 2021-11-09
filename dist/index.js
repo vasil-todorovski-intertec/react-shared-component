@@ -1,1 +1,1 @@
-"use strict";function e(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}Object.defineProperty(exports,"__esModule",{value:!0});var t=e(require("react"));exports.HelloWorld=()=>t.default.createElement("div",null,"Hello World !");
+"use strict";function e(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}Object.defineProperty(exports,"__esModule",{value:!0});var l=e(require("react"));exports.HelloSASS=()=>l.default.createElement("div",null,"Hello SASS !"),exports.HelloWorld=()=>l.default.createElement("div",null,"Hello World !");
