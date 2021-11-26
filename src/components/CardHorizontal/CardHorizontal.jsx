@@ -1,6 +1,4 @@
 import React from "react";
-import "./CardHorizontal.css";
-
 import {
   CouponImage,
   BrandLogo,
@@ -11,6 +9,8 @@ import {
   Like,
   CouponImageBadge,
 } from "../CouponParts";
+
+import "./CardHorizontal.css";
 
 function createMarkup(value) {
   return {
@@ -67,9 +67,9 @@ export const CardHorizontal = ({ coupon, className = "" }) => {
                     wordWrap: "break-word",
                     wordBreak: "break-word",
                   }}
-                  dangerouslySetInnerHTML={createMarkup(
-                    coupon.couponRegulations
-                  )}
+                  // dangerouslySetInnerHTML={createMarkup(
+                  //   coupon.couponRegulations
+                  // )}
                 ></div>
               </Description>
               <CouponButton
