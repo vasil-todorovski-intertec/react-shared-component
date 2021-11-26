@@ -1,5 +1,5 @@
 import React from "react";
-// import "./CardHorizontal.css";
+import "./CardHorizontal.css";
 
 import {
   CouponImage,
