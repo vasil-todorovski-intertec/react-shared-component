@@ -1,3 +1,7 @@
 import React from "react";
 
-export const HelloWorld = () => <div>Hello World !</div>;
+import "./HelloWorld.css";
+
+export const HelloWorld = () => (
+  <div className="hello-world">Hello World !</div>
+);
