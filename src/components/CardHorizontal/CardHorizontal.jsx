@@ -1,30 +1,30 @@
 import React from "react";
-import {
-  CouponImage,
-  BrandLogo,
-  Discount,
-  Heading,
-  Description,
-  CouponButton,
-  Like,
-  CouponImageBadge,
-} from "../CouponParts";
+// import {
+//   CouponImage,
+//   BrandLogo,
+//   Discount,
+//   Heading,
+//   Description,
+//   CouponButton,
+//   Like,
+//   CouponImageBadge,
+// } from "../CouponParts";
 
 import "./CardHorizontal.css";
 
-function createMarkup(value) {
-  return {
-    __html: value.toString(),
-  };
-}
+// function createMarkup(value) {
+//   return {
+//     __html: value.toString(),
+//   };
+// }
 
-const Centered = ({ className = "", children }) => {
-  return (
-    <div className={`Centered ${className}`}>
-      <div className="Centered__children">{children}</div>
-    </div>
-  );
-};
+// const Centered = ({ className = "", children }) => {
+//   return (
+//     <div className={`Centered ${className}`}>
+//       <div className="Centered__children">{children}</div>
+//     </div>
+//   );
+// };
 
 export const CardHorizontal = ({ coupon, className = "" }) => {
   return coupon ? (
@@ -32,7 +32,7 @@ export const CardHorizontal = ({ coupon, className = "" }) => {
       <div className="row">
         <div className="col-lg-8 col-12" id="coupons">
           <div className={`CardHorizontal ${className}`}>
-            <CouponImage coupon={coupon} imageUrl={coupon.imageUrl}>
+            {/* <CouponImage coupon={coupon} imageUrl={coupon.imageUrl}>
               <CouponImageBadge coupon={coupon} />
             </CouponImage>
             <div className="CardHorizontal__details">
@@ -67,9 +67,9 @@ export const CardHorizontal = ({ coupon, className = "" }) => {
                     wordWrap: "break-word",
                     wordBreak: "break-word",
                   }}
-                  // dangerouslySetInnerHTML={createMarkup(
-                  //   coupon.couponRegulations
-                  // )}
+                  dangerouslySetInnerHTML={createMarkup(
+                    coupon.couponRegulations
+                  )}
                 ></div>
               </Description>
               <CouponButton
@@ -80,7 +80,7 @@ export const CardHorizontal = ({ coupon, className = "" }) => {
                 }}
               />
               <Like isLiked={coupon.isFavourite} id={coupon.id}></Like>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
