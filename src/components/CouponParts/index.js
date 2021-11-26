@@ -1,12 +1,12 @@
-import CouponImage from "./CouponImage";
-import BrandLogo from "./BrandLogo";
-import Discount from "./Discount";
-import Heading from "./Heading";
-import Description from "./Description";
-import CouponCode from "./CouponCode";
-import CouponButton from "./CouponButton";
-import Like from "./Like";
-import CouponImageBadge from "./CouponImageBadge";
+import CouponImage from "./CouponImage.jsx";
+import BrandLogo from "./BrandLogo.jsx";
+import Discount from "./Discount.jsx";
+import Heading from "./Heading.jsx";
+import Description from "./Description.jsx";
+import CouponCode from "./CouponCode.jsx";
+import CouponButton from "./CouponButton.jsx";
+import Like from "./Like.jsx";
+import CouponImageBadge from "./CouponImageBadge.jsx";
 
 export {
   CouponImage,
