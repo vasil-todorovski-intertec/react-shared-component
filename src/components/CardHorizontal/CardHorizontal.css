@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CardHorizontal {
+  display: flex;
+  margin-bottom: 35px;
+  position: relative;
+  overflow: hidden;
+  width: 730px;
+  border: 1px black solid;
+}
+.CardHorizontal__image {
+  min-width: 50%;
+  position: relative;
+  min-height: 250px;
+  overflow: hidden;
+}
+.CardHorizontal__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.CardHorizontal .image-badge {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 60%;
+}
+.CardHorizontal__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 32px;
+  text-align: center;
+  max-width: 50%;
+}
+.CardHorizontal__logo {
+  display: block;
+  margin: 0 auto;
+  max-height: 75px;
+  max-width: 100%;
+}
+.CardHorizontal__discount {
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 1;
+  padding: 15px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .CardHorizontal__discount {
+    font-size: 42px;
+  }
+}
+@media (max-width: 991.98px) {
+  .CardHorizontal__discount {
+    font-size: 50px;
+  }
+}
+.CardHorizontal__discount-free {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.2;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  word-break: break-word;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.CardHorizontal__heading {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.CardHorizontal__description {
+  font-size: 10px;
+  padding: 20px 0;
+}
+.CardHorizontal__coupon-btn {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px 30px;
+  font-size: 20px;
+  line-height: 32px;
+  min-width: 70%;
+}
+.CardHorizontal__coupon-code-btn {
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  border-color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 42px;
+  min-width: 70%;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
+.CardHorizontal__coupon-code-btn.my-list-coupon-button {
+  margin: 20px auto 0;
+}
+.CardHorizontal__coupon-code-btn .coupon-code {
+  width: 70%;
+  background-color: white;
+  color: black;
+  float: left;
+  cursor: auto;
+  border: 1px solid #000;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+  min-height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CardHorizontal__coupon-code-btn .rabatte-button {
+  width: 140px;
+  font-size: 14px;
+}
+.CardHorizontal__coupon-code-btn .rabatte-button-brand {
+  width: 100%;
+  font-size: 20px;
+}
+.CardHorizontal__coupon-code-btn .copy-btn {
+  width: 30%;
+  float: left;
+  padding: 11px 0;
+  background-color: #000;
+  border: 1px solid #000;
+  border-left: 0;
+  cursor: pointer;
+  display: table;
+  user-select: none;
+}
+.CardHorizontal__coupon-code-btn .copy-btn p {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 700;
+  padding: 0 10%;
+  margin-bottom: 0rem;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.CardHorizontal__coupon-code-btn p {
+  margin-bottom: 0rem;
+  background-color: #000;
+}
+.CardHorizontal__coupon-code-btn a {
+  width: 280px;
+  height: 42px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 8px 23px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.CardHorizontal__coupon-code {
+  font-size: 20px;
+  line-height: 32px;
+  padding: 7px 30px;
+  min-width: 70%;
+  display: inline-block;
+  border: 1px solid #000;
+  font-weight: 700;
+}
+.CardHorizontal__image-badge {
+  background-color: #000;
+  font-size: 20px;
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-weight: 900;
+  transform: rotate(-45deg);
+  left: -50px;
+  transform-origin: 0% 50%;
+  top: 200px;
+}
+.CardHorizontal__download {
+  padding: 7px 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+}
+.CardHorizontal .Like {
+  position: absolute;
+  left: 42%;
+  bottom: 20px;
+}
