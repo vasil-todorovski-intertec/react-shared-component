@@ -10,6 +10,7 @@ import React from "react";
 //   CouponImageBadge,
 // } from "../CouponParts";
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./CardHorizontal.css";
 
 // function createMarkup(value) {
