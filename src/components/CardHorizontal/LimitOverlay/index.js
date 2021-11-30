@@ -1,5 +1,5 @@
-import LimitOverlay from "./LimitOverlay.jsx";
+import LimitOverlay, { getOverlayMessage } from "./LimitOverlay.jsx";
 
 export default LimitOverlay;
 
-// export { getOverlayMessage };
+export { getOverlayMessage };
