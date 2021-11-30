@@ -7,7 +7,7 @@ import {
   // Description,
   // CouponButton,
   // Like,
-  // CouponImageBadge,
+  CouponImageBadge,
 } from "./CouponParts";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -34,7 +34,7 @@ export const CardHorizontal = ({ coupon, className = "" }) => {
         <div className="col-lg-8 col-12" id="coupons">
           <div className={`CardHorizontal ${className}`}>
             <CouponImage coupon={coupon} imageUrl={coupon.imageUrl}>
-              {/* <CouponImageBadge coupon={coupon} /> */}
+              <CouponImageBadge coupon={coupon} />
             </CouponImage>
             <div className="CardHorizontal__details">
               {/* <BrandLogo src={coupon.brandLogo} />
