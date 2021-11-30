@@ -1,7 +1,5 @@
 import React from "react";
-import LimitOverlay, {
-  getOverlayMessage,
-} from "../LimitOverlay/LimitOverlay.jsx";
+import LimitOverlay, { getOverlayMessage } from "../LimitOverlay";
 
 function CouponImage({ className = "", coupon, children, imageUrl }) {
   return (
