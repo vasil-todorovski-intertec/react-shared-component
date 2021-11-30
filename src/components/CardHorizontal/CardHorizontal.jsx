@@ -8,7 +8,7 @@ import {
   // CouponButton,
   // Like,
   CouponImageBadge,
-} from "../CouponParts";
+} from "./CouponParts";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CardHorizontal.css";
