@@ -1,5 +1,5 @@
 import React from "react";
-import LimitOverlay, { getOverlayMessage } from "../LimitOverlay";
+import LimitOverlay from "../LimitOverlay";
 
 function CouponImage({ className = "", coupon, children, imageUrl }) {
   return (
@@ -7,10 +7,13 @@ function CouponImage({ className = "", coupon, children, imageUrl }) {
       <img id={`couponImage-${imageUrl}`} src={imageUrl} alt="image" />
       {children}
       <LimitOverlay
-        message={getOverlayMessage({
-          status: coupon.status,
-          isBrandCopiesLimitReached: coupon.isBrandCopiesLimitReached,
-        })}
+        message={
+          //   getOverlayMessage({
+          //   status: coupon.status,
+          //   isBrandCopiesLimitReached: coupon.isBrandCopiesLimitReached,
+          // })
+          "getOverlayMessage()"
+        }
       />
     </div>
   );
