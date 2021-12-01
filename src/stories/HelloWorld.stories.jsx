@@ -2,7 +2,7 @@ import React from "react";
 // import { storiesOf } from "@storybook/react";
 
 import { HelloWorld as HW } from "../components/HelloWorld";
-import { HelloSASS } from "../components/HelloSASS";
+// import { HelloSASS } from "../components/HelloSASS";
 
 // const stories = storiesOf("App test", module);
 
