@@ -1,5 +1,5 @@
 import { babel } from "@rollup/plugin-babel";
-import resolve from "@rollup/plugin-node-resolve";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import commonjs from "@rollup/plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
@@ -16,21 +16,22 @@ export default [
       {
         file: packageJson.main,
         format: "cjs",
-        sourcemap: true,
+        sourcemap: "inline",
       },
       {
         file: packageJson.module,
-        format: "esm",
-        exports: "named",
-        sourcemap: true,
+        format: "es",
+        // exports: "named",
+        sourcemap: "inline",
       },
     ],
     plugins: [
       peerDepsExternal(),
-      resolve(),
+      nodeResolve(),
       commonjs(),
       postcss({
-        plugins: [],
+        extensions: [".css", ".scss"],
+        // plugins: [],
         minimise: true,
       }),
       babel({
@@ -40,7 +41,18 @@ export default [
       }),
       image(),
       json(),
-      terser(),
+      terser({
+        ecma: 2020,
+        mangle: { toplevel: true },
+        compress: {
+          module: true,
+          toplevel: true,
+          unsafe_arrows: false,
+          drop_console: false,
+          drop_debugger: false,
+        },
+        output: { quote_style: 1 },
+      }),
     ],
   },
 ];

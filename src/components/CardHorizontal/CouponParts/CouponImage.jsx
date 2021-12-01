@@ -9,8 +9,7 @@ function CouponImage({ className = "", coupon, children, imageUrl }) {
       <LimitOverlay
         message={getOverlayMessage({
           status: coupon.status,
-          isBrandCopiesLimitReached: coupon?.isBrandCopiesLimitReached,
-          validationDate: coupon?.validationDate,
+          isBrandCopiesLimitReached: coupon.isBrandCopiesLimitReached,
         })}
       />
     </div>

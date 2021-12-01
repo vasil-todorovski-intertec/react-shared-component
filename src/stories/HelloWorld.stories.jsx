@@ -1,8 +1,8 @@
 import React from "react";
 // import { storiesOf } from "@storybook/react";
 
-import { HelloWorld } from "../components/HelloWorld";
-// import { HelloSASS } from "../components/HelloSASS";
+import { HelloWorld as HW } from "../components/HelloWorld";
+import { HelloSASS } from "../components/HelloSASS";
 
 // const stories = storiesOf("App test", module);
 
@@ -10,7 +10,7 @@ import { HelloWorld } from "../components/HelloWorld";
 // stories.add("Hello scss", () => <HelloSASS />);
 
 export default {
-  title: "HelloWorld",
+  title: "App test",
 };
 
-export const World = () => <HelloWorld />;
+export const HelloWorld = () => <HW />;
