@@ -2,10 +2,10 @@ import React from "react";
 import {
   CouponImage,
   BrandLogo,
-  // Discount,
-  // Heading,
-  // Description,
-  // CouponButton,
+  Discount,
+  Heading,
+  Description,
+  CouponButton,
   Like,
   CouponImageBadge,
 } from "./CouponParts";
@@ -13,19 +13,19 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CardHorizontal.css";
 
-// function createMarkup(value) {
-//   return {
-//     __html: value.toString(),
-//   };
-// }
+function createMarkup(value) {
+  return {
+    __html: value.toString(),
+  };
+}
 
-// const Centered = ({ className = "", children }) => {
-//   return (
-//     <div className={`Centered ${className}`}>
-//       <div className="Centered__children">{children}</div>
-//     </div>
-//   );
-// };
+const Centered = ({ className = "", children }) => {
+  return (
+    <div className={`Centered ${className}`}>
+      <div className="Centered__children">{children}</div>
+    </div>
+  );
+};
 
 export const CardHorizontal = ({ coupon, className = "" }) => {
   return coupon ? (
@@ -38,7 +38,7 @@ export const CardHorizontal = ({ coupon, className = "" }) => {
             </CouponImage>
             <div className="CardHorizontal__details">
               <BrandLogo src={coupon.brandLogo} />
-              {/* <Discount type={coupon.discountType}>
+              <Discount type={coupon.discountType}>
                 {coupon.discountType === "FREE"
                   ? coupon.freeDescription
                   : coupon.discountValue}
@@ -79,7 +79,7 @@ export const CardHorizontal = ({ coupon, className = "" }) => {
                   ...(coupon.code && { code: coupon.code }),
                   ...(coupon.codeURL && { codeURL: coupon.codeURL }),
                 }}
-              /> */}
+              />
               <Like isLiked={coupon.isFavourite} id={coupon.id}></Like>
             </div>
           </div>
