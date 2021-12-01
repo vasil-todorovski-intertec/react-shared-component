@@ -7,12 +7,7 @@ export const getOverlayMessage = (coupon) => {
     return "Maximale Downloadzahl erreicht";
   } else if (coupon?.isBrandCopiesLimitReached) {
     return "Maximale Downloadzahl pro Marke erreicht";
-  } else if (
-    new Date().getTime() > new Date(coupon?.validationDate).getTime() ||
-    coupon?.status === "EXPIRED"
-    // new Date().toISOString().slice(0, 10) >
-    //   `${coupon?.validationDate.slice(0, 10)}`
-  ) {
+  } else if (coupon?.status === "EXPIRED") {
     return "Leider nicht mehr gültig";
   } else if (coupon?.status === "SOLD_OUT") {
     return "Maximale Downloadanzahl erreicht";
