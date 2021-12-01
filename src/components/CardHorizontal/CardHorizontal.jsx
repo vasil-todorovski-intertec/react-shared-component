@@ -6,7 +6,7 @@ import {
   // Heading,
   // Description,
   // CouponButton,
-  // Like,
+  Like,
   CouponImageBadge,
 } from "./CouponParts";
 
@@ -79,8 +79,8 @@ export const CardHorizontal = ({ coupon, className = "" }) => {
                   ...(coupon.code && { code: coupon.code }),
                   ...(coupon.codeURL && { codeURL: coupon.codeURL }),
                 }}
-              />
-              <Like isLiked={coupon.isFavourite} id={coupon.id}></Like> */}
+              /> */}
+              <Like isLiked={coupon.isFavourite} id={coupon.id}></Like>
             </div>
           </div>
         </div>
