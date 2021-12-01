@@ -1,7 +1,7 @@
 import React from "react";
 import {
   CouponImage,
-  // BrandLogo,
+  BrandLogo,
   // Discount,
   // Heading,
   // Description,
@@ -37,8 +37,8 @@ export const CardHorizontal = ({ coupon, className = "" }) => {
               <CouponImageBadge coupon={coupon} />
             </CouponImage>
             <div className="CardHorizontal__details">
-              {/* <BrandLogo src={coupon.brandLogo} />
-              <Discount type={coupon.discountType}>
+              <BrandLogo src={coupon.brandLogo} />
+              {/* <Discount type={coupon.discountType}>
                 {coupon.discountType === "FREE"
                   ? coupon.freeDescription
                   : coupon.discountValue}
