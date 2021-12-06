@@ -11,8 +11,8 @@ import {
 } from "./CouponParts";
 import LimitOverlay, { getOverlayMessage } from "./LimitOverlay";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./CardHorizontal.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "./CardHorizontal.scss";
 
 function createMarkup(value) {
   return {

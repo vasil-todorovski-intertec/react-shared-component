@@ -58,7 +58,7 @@ function FillHeartIcon(props) {
   );
 }
 
-const LikeIcon = ({ className = "", isLiked = false }) => {
+const LikeIcon = ({ className = "", isLiked }) => {
   if (isLiked) {
     return <FillHeartIcon width="36px" height="36px" className={className} />;
   } else {

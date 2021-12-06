@@ -7,6 +7,7 @@
   cursor: pointer;
   z-index: 1;
 }
+
 @keyframes rocket {
   0% {
     transform: scale(1);
@@ -18,16 +19,20 @@
     transform: scale(1);
   }
 }
+
 .Like.liked {
   animation: rocket ease-in-out 0.3s;
 }
+
 .Like .showOnHover {
   display: none;
   transition: transform ease-out 0.08s;
 }
+
 .Like.hover-enabled:hover svg {
   display: none;
 }
+
 .Like.hover-enabled:hover .showOnHover {
   display: inline-block;
   transform: scale(1.2);
