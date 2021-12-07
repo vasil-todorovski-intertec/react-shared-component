@@ -11,7 +11,6 @@ import {
 } from "./CouponParts";
 import LimitOverlay, { getOverlayMessage } from "./LimitOverlay";
 
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "./CardHorizontal.scss";
 
 function createMarkup(value) {
@@ -29,8 +28,6 @@ export const CardHorizontal = ({
   isLiked,
 }) => {
   return coupon ? (
-    // <div className="container pad-lr-10">
-    //   <div className="row">
     <div className="col-lg-8 col-12" id="coupons">
       <div className={`CardHorizontal ${className}`}>
         <CouponImage src={coupon.image}>
@@ -95,7 +92,5 @@ export const CardHorizontal = ({
         </div>
       </div>
     </div>
-  ) : //   </div>
-  // </div>
-  null;
+  ) : null;
 };
