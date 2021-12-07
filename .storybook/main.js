@@ -6,14 +6,14 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/preset-scss",
-    // {
-    //   name: "@storybook/addon-postcss",
-    //   options: {
-    //     postcssLoaderOptions: {
-    //       implementation: require("postcss"),
-    //     },
-    //   },
-    // },
+    {
+      name: "@storybook/addon-postcss",
+      options: {
+        postcssLoaderOptions: {
+          implementation: require("postcss"),
+        },
+      },
+    },
   ],
   webpackFinal: async (config) => {
     // config.module.rules.push({

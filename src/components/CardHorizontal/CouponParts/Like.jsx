@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Like.css";
+
 function OutlineHeartIcon(props) {
   return (
     <svg
@@ -55,12 +57,38 @@ function FillHeartIcon(props) {
     </svg>
   );
 }
-function Like({ className = "", isLiked = false, id }) {
-  const icon = isLiked ? (
-    <FillHeartIcon width="36px" height="36px" />
-  ) : (
-    <OutlineHeartIcon width="36px" height="36px" />
-  );
-  return <div className={`Like ${className}`}>{icon}</div>;
-}
+
+const LikeIcon = ({ className = "", isLiked }) => {
+  if (isLiked) {
+    return <FillHeartIcon width="36px" height="36px" className={className} />;
+  } else {
+    return (
+      <OutlineHeartIcon width="36px" height="36px" className={className} />
+    );
+  }
+};
+
+const Like = ({
+  className = "",
+  isLiked = false,
+  id,
+  handleClick = () => {},
+  isAuth,
+  isTouchDevice = false,
+}) => {
+  const icon = <LikeIcon isLiked={isLiked} />;
+  const hoverIcon = <LikeIcon isLiked={true} className="showOnHover" />;
+  return isAuth ? (
+    <div
+      className={`Like ${className} ${isTouchDevice ? "" : "hover-enabled"} ${
+        isLiked ? "liked" : ""
+      }`}
+      onClick={handleClick}
+    >
+      {icon}
+      {hoverIcon}
+    </div>
+  ) : null;
+};
+
 export default Like;

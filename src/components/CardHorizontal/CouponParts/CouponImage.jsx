@@ -1,20 +1,14 @@
 import React from "react";
-import LimitOverlay, { getOverlayMessage } from "../LimitOverlay";
 
-function CouponImage({ className = "", coupon, children, imageUrl }) {
+function CouponImage({ className = "", src, children }) {
   return (
     <div className={`CardHorizontal__image ${className}`}>
-      <img id={`couponImage-${imageUrl}`} src={imageUrl} alt="image" />
-      {children}
-      <LimitOverlay
-        message={
-          getOverlayMessage({
-            status: coupon.status,
-            isBrandCopiesLimitReached: coupon.isBrandCopiesLimitReached,
-          })
-          // "getOverlayMessage()"
-        }
+      <img
+        id={`couponImage-${src}`}
+        src={src ? src : "coupon_image_placeholder.png"}
+        alt="image"
       />
+      {children}
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 // import { storiesOf } from "@storybook/react";
 
 import { HelloWorld as HW } from "../components/HelloWorld";
-// import { HelloSASS } from "../components/HelloSASS";
+import { HelloSASS as HS } from "../components/HelloSASS";
 
 // const stories = storiesOf("App test", module);
 
@@ -13,4 +13,9 @@ export default {
   title: "App test",
 };
 
-export const HelloWorld = () => <HW />;
+export const HelloWorld = () => (
+  <>
+    <HW />
+    <HS />
+  </>
+);
