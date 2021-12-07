@@ -3,6 +3,8 @@ import { storiesOf } from "@storybook/react";
 
 import { CardHorizontal } from "../components/CardHorizontal";
 
+import "./CardHorizontal.stories.scss";
+
 const stories = storiesOf("App test", module);
 
 const coupon = {
@@ -77,17 +79,21 @@ const state = (function () {
   };
 })();
 
-stories.add("Card Horizontal", () =>
-  coupons.map((coupon, index) => (
-    <CardHorizontal
-      key={coupon.id}
-      coupon={coupon}
-      imageUrl=""
-      brandLogo=""
-      handleLikeClick={state.setIsLiked}
-      isAuth={true}
-      isLiked={state.isLiked}
-      isTouchDevice={!!(index % 2)}
-    />
-  ))
-);
+stories.add("Card Horizontal", () => (
+  <div className="background">
+    {coupons.map((coupon, index) => (
+      <div className="col-lg-8 col-12" id="coupons">
+        <CardHorizontal
+          key={coupon.id}
+          coupon={coupon}
+          imageUrl=""
+          brandLogo=""
+          handleLikeClick={state.setIsLiked}
+          isAuth={true}
+          isLiked={state.isLiked}
+          isTouchDevice={!!(index % 2)}
+        />
+      </div>
+    ))}
+  </div>
+));

@@ -1,9 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-// @import "../../styles/sass/variables";
-$handheld-breakpoint: 480px;
+@import "./styles/sass/variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
+// Override default variables before the import
+$body-bg: #ebebeb;
+$body-color: #000;
+$enable-rounded: false;
+$theme-colors: (
+  "primary": #007bff,
+  "danger": #ff4136,
+  "custom-color": #900,
+  "dark": #000,
+  "gray": #000,
+  "red": #ff0000,
+);
+$font-family-sans-serif: "Montserrat", sans-serif;
+html {
+  scroll-behavior: smooth;
+}
 
 $imageHeight: 250px;
 .CardHorizontal {
