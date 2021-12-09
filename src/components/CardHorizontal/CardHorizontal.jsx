@@ -30,6 +30,8 @@ export const CardHorizontal = ({
   getCouponCode,
   showToastMessage,
   PDFDownloadButton,
+  code,
+  codeURL,
 }) => {
   return coupon ? (
     // <div className="col-lg-8 col-12" id="coupons">
@@ -90,8 +92,8 @@ export const CardHorizontal = ({
         <CouponButton
           coupon={{
             ...coupon,
-            ...(coupon.code && { code: coupon.code }),
-            ...(coupon.codeURL && { codeURL: coupon.codeURL }),
+            ...(code && { code }),
+            ...(codeURL && { codeURL }),
           }}
           PDFDownloadButton={PDFDownloadButton}
           onClick={getCouponCode}
