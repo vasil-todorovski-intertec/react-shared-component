@@ -1,5 +1,8 @@
+@import "../styles/sass/variables";
+
 .LimitOverlay {
   position: absolute;
+  // z-index: 150;
   background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
@@ -17,4 +20,9 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+
+  @media screen and (max-width: $handheld-breakpoint) {
+    font-size: 13px;
+    line-height: 18px;
+  }
 }

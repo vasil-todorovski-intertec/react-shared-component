@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./LimitOverlay.css";
+import "./LimitOverlay.scss";
 
 export const getOverlayMessage = (coupon) => {
   if (coupon.status === "SPENT_ALL_DAILY_COUPONS") {

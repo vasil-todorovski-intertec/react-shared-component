@@ -26,6 +26,10 @@ export const CardHorizontal = ({
   isAuth,
   isTouchDevice,
   isLiked,
+  hasLongWordsHeadline,
+  getCouponCode,
+  showToastMessage,
+  PDFDownloadButton,
 }) => {
   return coupon ? (
     // <div className="col-lg-8 col-12" id="coupons">
@@ -49,14 +53,17 @@ export const CardHorizontal = ({
       </CouponImage>
       <div className="CardHorizontal__details">
         <BrandLogo src={coupon.brandLogo} />
-        <Discount type={coupon.discountType}>
+        <Discount
+          type={coupon.discountType}
+          hasLongWords={hasLongWordsHeadline}
+        >
           {coupon.discountType === "FREE"
             ? coupon.freeDescription
             : coupon.discountValue}
         </Discount>
         <Heading>
           Mindestbestellwert:{" "}
-          {coupon && coupon.amountCondition && coupon.amountCondition !== 0 ? (
+          {coupon.amountCondition !== 0 ? (
             <b>{coupon.amountCondition.toLocaleString("de-DE")}</b>
           ) : (
             <b>keiner</b>
@@ -86,6 +93,9 @@ export const CardHorizontal = ({
             ...(coupon.code && { code: coupon.code }),
             ...(coupon.codeURL && { codeURL: coupon.codeURL }),
           }}
+          PDFDownloadButton={PDFDownloadButton}
+          onClick={getCouponCode}
+          addMessage={showToastMessage}
         />
       </div>
     </div>
