@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
@@ -19,9 +19,9 @@ $theme-colors: (
   "red": #ff0000,
 );
 $font-family-sans-serif: "Montserrat", sans-serif;
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: smooth;
+// }
 
 $imageHeight: 250px;
 .CardHorizontal {
