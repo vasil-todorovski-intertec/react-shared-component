@@ -34,7 +34,7 @@ export const CardHorizontal = ({
   codeURL,
 }) => {
   return coupon ? (
-    <div className={`CardHorizontal ${className}`}>
+    <div className={`CardHorizontal ${className} sandbox`}>
       <CouponImage src={coupon.image}>
         <CouponImageBadge coupon={coupon} />
         <LimitOverlay
