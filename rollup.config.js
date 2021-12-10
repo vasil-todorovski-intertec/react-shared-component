@@ -33,6 +33,10 @@ export default [
         extensions: [".css", ".scss"],
         // plugins: [],
         minimise: true,
+        modules: {
+          generateScopedName: "[name]__[local]___[hash:base64:8]",
+        },
+        autoModules: true,
       }),
       babel({
         exclude: "node_modules/**",
