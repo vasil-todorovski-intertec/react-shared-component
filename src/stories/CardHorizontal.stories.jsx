@@ -78,8 +78,6 @@ export const CardHorizontal = () => {
         <CH
           key={coupon.id}
           coupon={coupon}
-          imageUrl=""
-          brandLogo=""
           handleLikeClick={() => setIsLiked((l) => !l)}
           isAuth={true}
           isLiked={isLiked}
