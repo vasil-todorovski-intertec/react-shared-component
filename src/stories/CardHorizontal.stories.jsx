@@ -48,7 +48,8 @@ const coupons = [
   {
     amountCondition: "Amount conditio",
     brandId: 211,
-    brandLogo: "/uploads/BrandPage-1634625322362-images(13).jpeg",
+    brandLogo:
+      "https://stg.captaincoupon.de/uploads/BrandPage-1634625322362-images(13).jpeg",
     brandSlug: "g23",
     couponLink: "https://www.adidas.com/us",
     couponRegulations: "<p>dedede</p>",
@@ -56,7 +57,8 @@ const coupons = [
     discountType: "PERCENTAGE",
     discountValue: 1,
     id: 587,
-    image: "/uploads/Coupon-1634565589043-images(22).jpeg",
+    image:
+      "https://stg.captaincoupon.de/uploads/Coupon-1634565589043-images(22).jpeg",
     isBrandCopiesLimitReached: false,
     isFavourite: false,
     isForNewCustomers: false,
@@ -82,6 +84,7 @@ export const CardHorizontal = () => {
           isAuth={true}
           isLiked={isLiked}
           isTouchDevice={!!(index % 2)}
+          code={index === 2 ? "23874618461" : undefined}
         />
       ))}
     </div>
