@@ -46,7 +46,7 @@ function CouponButton({
       <a
         href={coupon.couponLink}
         target="_blank"
-        className={"btn CardHorizontal__zum-shop-btn"}
+        className={"CardHorizontal__zum-shop-btn"}
       >
         Zum Shop
       </a>

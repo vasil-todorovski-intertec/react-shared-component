@@ -203,6 +203,7 @@ $imageHeight: 250px;
     color: #000 !important;
     background-color: #81e9f0 !important;
     text-decoration: none;
+    font-weight: 600;
 
     @media screen and (max-width: $handheld-breakpoint) {
       font-size: 10px;
