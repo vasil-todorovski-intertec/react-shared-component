@@ -18,7 +18,7 @@ function Discount({
     <div className={`CardHorizontal__discount ${className}`}>
       {type === "PERCENTAGE"
         ? children + "%"
-        : (children % 1 != 0
+        : (children && children % 1 != 0
             ? children.toLocaleString("de-DE", {
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2,
