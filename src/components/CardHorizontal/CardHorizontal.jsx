@@ -64,8 +64,8 @@ export const CardHorizontal = ({
         </Discount>
         <Heading>
           Mindestbestellwert:{" "}
-          {coupon.amountCondition !== 0 ? (
-            <b>{coupon.amountCondition?.toLocaleString("de-DE")}</b>
+          {coupon.amountCondition && coupon.amountCondition !== 0 ? (
+            <b>{coupon.amountCondition.toLocaleString("de-DE")}</b>
           ) : (
             <b>keiner</b>
           )}
